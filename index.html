@@ -24,11 +24,15 @@
             ]); 
 
             var opcoes = {
-                'title':'Tipos de gastos'
+                'title':'Tipos de gastos',
+                'height': 300,
+                'width': 400,
+                // 'pieHole': 0.4, //é o miolo no meio do gráfico e deixa como donut chart
+                'is3D': true,
             }
 
             var grafico = new google.visualization.PieChart(document.getElementById('graficoPizza'));
-            grafico.draw(tabela);	
+            grafico.draw(tabela, opcoes);	
 
             }   
 
